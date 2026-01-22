@@ -1,0 +1,5 @@
+#Ignorar los modulos que se suben por medio de npm
+node_modules
+
+#Ignorar ambiente virtual en caso de contruirlo
+.env
