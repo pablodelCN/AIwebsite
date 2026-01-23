@@ -1,0 +1,40 @@
+🟢 Módulo 1: El Motor (Fundamentos de Node.js)
+Arquitectura de Node: ¿Qué es V8? El Event Loop y cómo funciona la asincronía (Non-blocking I/O).
+
+Módulos Nativos: Uso de fs (sistema de archivos), path y http.
+
+Gestión de Paquetes: Dominio de NPM/PNPM y el archivo package.json.
+
+Variables de Entorno: Uso de .env para proteger secretos y configuraciones.
+
+🔵 Módulo 2: El Protocolo (Comunicación Web)
+Protocolo HTTP: Anatomía de una petición (Headers, Body, Query Params, Path Params).
+
+Verbos HTTP: Cuándo usar GET, POST, PUT, DELETE y PATCH.
+
+Códigos de Estado: Entender los rangos 2xx, 3xx, 4xx y 5xx.
+
+Postman/Insomnia: Herramientas para testear tus engranajes sin usar un navegador.
+
+🟡 Módulo 3: El Framework (Express.js a Fondo)
+Routing Profesional: Estructura de rutas escalable y uso de express.Router.
+
+Middlewares (La clave): Crear tus propios intermediarios para validación y loggeo.
+
+Manejo de Errores: Centralizar los errores para que tu servidor nunca se caiga ("Graceful shutdown").
+
+CORS: Entender la seguridad entre diferentes dominios.
+
+🟠 Módulo 4: La Memoria (Bases de Datos y Persistencia)
+SQL vs NoSQL: Cuándo usar PostgreSQL/MySQL frente a MongoDB.
+
+Modelado de Datos: Relaciones (uno a muchos, muchos a muchos).
+
+ORM/Query Builders: Uso de herramientas como Prisma o Sequelize para hablar con la base de datos desde JavaScript.
+
+🔴 Módulo 5: La Seguridad (Identidad y Protección)
+Hasheo de Contraseñas: Uso de bcrypt para nunca guardar claves en texto plano.
+
+Autenticación: Implementación de JWT (JSON Web Tokens).
+
+Autorización: Diferencia entre quién eres (login) y qué puedes hacer (roles/permisos).
