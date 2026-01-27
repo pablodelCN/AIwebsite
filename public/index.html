@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title> AI WEbsite- Hola mundo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- <link  rel="stylesheet" href="css/styles.css">   -->
+    <style>
+        body {font-family: sans-serif; display: flex; justify-content: left; padding: 50px; background: #f4f4f4; }
+        .card { background: white; padding: 20px; border-radius: 10px; shadow: 0 20px 10px rgba(0,0,0,0.1); }
+        button {background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5 px; cursor: pointer; }
+        button: hover {background: #0056b3; }
+    </style>
 </head>
 <body>
-    <h1> Hola Mundo </h1>
-    <p> Servidor express con node </p>
+        <!-- <h1> Hola Mundo </h1>
+    <p> Servidor express con node </p> -->
+    <div id = "root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        function App() {
+            const [count, setcount] = useState(1); 
+
+            return (
+                <div className="card">
+                    <h1> Bienvenido a mi AI Website </h1>
+                    <p> Has encontrado tu músculo del límite <strong> {count} </strong> veces hoy. </p> 
+                    <button onClick={() => setcount(count.toString() + "Hola mnundo" )}>
+                        Entrenar músculo
+                    </button>
+                    <p> <small>Estado: Controlando mi propia autonomía. </small></p>
+                </div>
+                );
+        }
+
+        // Renderizamos la aplicación en el div #root 
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
 </body>
 </html>
